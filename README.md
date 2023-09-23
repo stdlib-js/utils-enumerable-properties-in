@@ -44,7 +44,7 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
-enumerablePropertiesIn = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-enumerable-properties-in@umd/browser.js' )
+enumerablePropertiesIn = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-enumerable-properties-in@v0.1.0-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -56,7 +56,7 @@ var enumerablePropertiesIn = require( 'path/to/vendor/umd/utils-enumerable-prope
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-enumerable-properties-in@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-enumerable-properties-in@v0.1.0-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -104,7 +104,7 @@ var props = enumerablePropertiesIn( obj );
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-symbol-support@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/symbol-ctor@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-enumerable-properties-in@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-enumerable-properties-in@v0.1.0-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
