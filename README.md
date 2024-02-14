@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import enumerablePropertiesIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-enumerable-properties-in@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-enumerable-properties-in/tags). For example,
+
+```javascript
 import enumerablePropertiesIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-enumerable-properties-in@v0.2.0-deno/mod.js';
 ```
 
@@ -77,7 +82,7 @@ var props = enumerablePropertiesIn( obj );
 ```javascript
 import hasSymbolSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-symbol-support@deno/mod.js';
 import Symbol from 'https://cdn.jsdelivr.net/gh/stdlib-js/symbol-ctor@deno/mod.js';
-import enumerablePropertiesIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-enumerable-properties-in@v0.2.0-deno/mod.js';
+import enumerablePropertiesIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-enumerable-properties-in@deno/mod.js';
 
 var hasSymbols = hasSymbolSupport();
 
