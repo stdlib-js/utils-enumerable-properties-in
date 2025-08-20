@@ -35,38 +35,32 @@ limitations under the License.
 
 > Return an array of an object's own and inherited enumerable property names and [symbols][@stdlib/symbol/ctor].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-enumerable-properties-in
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-enumerablePropertiesIn = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-enumerable-properties-in@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var enumerablePropertiesIn = require( 'path/to/vendor/umd/utils-enumerable-properties-in/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-enumerable-properties-in@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.enumerablePropertiesIn;
-})();
-</script>
+var enumerablePropertiesIn = require( '@stdlib/utils-enumerable-properties-in' );
 ```
 
 #### enumerablePropertiesIn( obj )
@@ -98,15 +92,10 @@ var props = enumerablePropertiesIn( obj );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-symbol-support@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/symbol-ctor@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-enumerable-properties-in@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var hasSymbolSupport = require( '@stdlib/assert-has-symbol-support' );
+var Symbol = require( '@stdlib/symbol-ctor' );
+var enumerablePropertiesIn = require( '@stdlib/utils-enumerable-properties-in' );
 
 var hasSymbols = hasSymbolSupport();
 
@@ -126,11 +115,6 @@ if ( hasSymbols ) {
 var obj = new Foo();
 var props = enumerablePropertiesIn( obj );
 // e.g., returns [ 'a', 'foo', ... ]
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -182,7 +166,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -228,21 +212,21 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/utils-enumerable-properties-in/main/LICENSE
 
-[@stdlib/symbol/ctor]: https://github.com/stdlib-js/symbol-ctor/tree/umd
+[@stdlib/symbol/ctor]: https://github.com/stdlib-js/symbol-ctor
 
 <!-- <related-links> -->
 
-[@stdlib/utils/enumerable-properties]: https://github.com/stdlib-js/utils-enumerable-properties/tree/umd
+[@stdlib/utils/enumerable-properties]: https://github.com/stdlib-js/utils-enumerable-properties
 
-[@stdlib/utils/enumerable-property-symbols-in]: https://github.com/stdlib-js/utils-enumerable-property-symbols-in/tree/umd
+[@stdlib/utils/enumerable-property-symbols-in]: https://github.com/stdlib-js/utils-enumerable-property-symbols-in
 
-[@stdlib/utils/inherited-enumerable-properties]: https://github.com/stdlib-js/utils-inherited-enumerable-properties/tree/umd
+[@stdlib/utils/inherited-enumerable-properties]: https://github.com/stdlib-js/utils-inherited-enumerable-properties
 
-[@stdlib/utils/keys-in]: https://github.com/stdlib-js/utils-keys-in/tree/umd
+[@stdlib/utils/keys-in]: https://github.com/stdlib-js/utils-keys-in
 
-[@stdlib/utils/nonenumerable-properties-in]: https://github.com/stdlib-js/utils-nonenumerable-properties-in/tree/umd
+[@stdlib/utils/nonenumerable-properties-in]: https://github.com/stdlib-js/utils-nonenumerable-properties-in
 
-[@stdlib/utils/properties-in]: https://github.com/stdlib-js/utils-properties-in/tree/umd
+[@stdlib/utils/properties-in]: https://github.com/stdlib-js/utils-properties-in
 
 <!-- </related-links> -->
 
